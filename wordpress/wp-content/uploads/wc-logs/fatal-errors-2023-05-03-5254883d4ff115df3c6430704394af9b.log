@@ -1,0 +1,22 @@
+2023-05-03T10:31:14+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string * string in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\admin\subscription_charge.php:28
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php(157): include()
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): generate_subscription_charge_page('')
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 D:\wamp\www\Drizzle\wordpress\wp-admin\admin.php(259): do_action('product_page_su...')
+#5 D:\wamp\www\Drizzle\wordpress\wp-admin\edit.php(10): require_once('D:\\wamp\\www\\Dri...')
+#6 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\admin\subscription_charge.php on line 28
+
+2023-05-03T10:37:43+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string * string in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\admin\subscription_charge.php:28
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php(157): include()
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): generate_subscription_charge_page('')
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 D:\wamp\www\Drizzle\wordpress\wp-admin\admin.php(259): do_action('product_page_su...')
+#5 D:\wamp\www\Drizzle\wordpress\wp-admin\edit.php(10): require_once('D:\\wamp\\www\\Dri...')
+#6 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\admin\subscription_charge.php on line 28
+

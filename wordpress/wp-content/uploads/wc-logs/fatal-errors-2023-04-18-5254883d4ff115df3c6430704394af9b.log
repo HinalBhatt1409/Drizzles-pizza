@@ -1,0 +1,76 @@
+2023-04-18T05:13:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_login_redirect(), 1 passed in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php:56
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_login_redirect('')
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#4 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#6 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php on line 56
+
+2023-04-18T05:14:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_login_redirect(), 1 passed in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php:56
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_login_redirect('')
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#4 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#6 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php on line 56
+
+2023-04-18T05:14:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_login_redirect(), 1 passed in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php:56
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_login_redirect('')
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#4 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#6 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php on line 56
+
+2023-04-18T05:17:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_login_redirect(), 1 passed in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308 and exactly 2 expected in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php:56
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_login_redirect('')
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#4 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#6 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php on line 56
+
+2023-04-18T05:24:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function user_login_redirect(), 2 passed in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308 and exactly 3 expected in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php:79
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): user_login_redirect('/Drizzle/wordpr...', Object(WP_User))
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(205): WP_Hook->apply_filters('/Drizzle/wordpr...', Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(979): apply_filters('woocommerce_log...', '/Drizzle/wordpr...', Object(WP_User))
+#3 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): WC_Form_Handler::process_login('')
+#4 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#5 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 D:\wamp\www\Drizzle\wordpress\wp-settings.php(645): do_action('wp_loaded')
+#7 D:\wamp\www\Drizzle\wordpress\wp-config.php(96): require_once('D:\\wamp\\www\\Dri...')
+#8 D:\wamp\www\Drizzle\wordpress\wp-load.php(50): require_once('D:\\wamp\\www\\Dri...')
+#9 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(13): require_once('D:\\wamp\\www\\Dri...')
+#10 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#11 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php on line 79
+
+2023-04-18T05:25:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function user_login_redirect(), 2 passed in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308 and exactly 3 expected in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php:79
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): user_login_redirect('/Drizzle/wordpr...', Object(WP_User))
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(205): WP_Hook->apply_filters('/Drizzle/wordpr...', Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(979): apply_filters('woocommerce_log...', '/Drizzle/wordpr...', Object(WP_User))
+#3 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): WC_Form_Handler::process_login('')
+#4 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#5 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 D:\wamp\www\Drizzle\wordpress\wp-settings.php(645): do_action('wp_loaded')
+#7 D:\wamp\www\Drizzle\wordpress\wp-config.php(96): require_once('D:\\wamp\\www\\Dri...')
+#8 D:\wamp\www\Drizzle\wordpress\wp-load.php(50): require_once('D:\\wamp\\www\\Dri...')
+#9 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(13): require_once('D:\\wamp\\www\\Dri...')
+#10 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#11 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php on line 79
+
