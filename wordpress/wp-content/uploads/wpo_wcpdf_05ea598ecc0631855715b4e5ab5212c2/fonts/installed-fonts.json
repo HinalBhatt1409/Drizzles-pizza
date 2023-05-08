@@ -1,0 +1,26 @@
+{
+    "open sans": {
+        "normal": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/OpenSans-Normal",
+        "bold": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/OpenSans-Bold",
+        "italic": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/OpenSans-Italic",
+        "bold_italic": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/OpenSans-BoldItalic"
+    },
+    "segoe": {
+        "normal": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/Segoe-Normal",
+        "bold": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/Segoe-Bold",
+        "italic": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/Segoe-Italic",
+        "bold_italic": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/Segoe-BoldItalic"
+    },
+    "roboto slab": {
+        "normal": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/RobotoSlab-Normal",
+        "bold": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/RobotoSlab-Bold",
+        "italic": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/RobotoSlab-Italic",
+        "bold_italic": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/RobotoSlab-BoldItalic"
+    },
+    "currencies": {
+        "normal": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/currencies",
+        "bold": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/currencies",
+        "italic": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/currencies",
+        "bold_italic": "D:\/wamp\/www\/Drizzle\/wordpress\/wp-content\/uploads\/wpo_wcpdf_05ea598ecc0631855715b4e5ab5212c2\/fonts\/currencies"
+    }
+}

@@ -1,0 +1,362 @@
+2023-05-08T06:20:15+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '2', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:16+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '3', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:16+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '4', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:16+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '5', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:16+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '6', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:17+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '7', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:17+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '8', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:17+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '9', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:18+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '8', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:18+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '7', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:19+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '6', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T06:20:19+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '5', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T07:26:11+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '2', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T07:26:12+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '3', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T07:26:13+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '2', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T07:26:13+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '1', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T08:57:06+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '2', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T08:57:06+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '3', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T08:57:10+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '2', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T08:57:10+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '1', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T08:57:16+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '2', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T08:57:17+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '3', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T08:57:33+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '4', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T09:10:04+00:00 CRITICAL Uncaught Error: Call to a member function get_tax_class() on null in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php:225
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(651): WC_Cart_Totals->get_items_from_cart()
+#1 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_item_totals()
+#2 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php(134): WC_Cart_Totals->calculate()
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1401): WC_Cart_Totals->__construct(Object(WC_Cart))
+#4 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart.php(1360): WC_Cart->calculate_totals()
+#5 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php(200): WC_Cart->set_quantity('cart[6f4922f455...', '2', true)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(308): custom_update_cart_quantity('')
+#7 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\wamp\www\Drizzle\wordpress\wp-admin\admin-ajax.php(188): do_action('wp_ajax_custom_...')
+#10 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\includes\class-wc-cart-totals.php on line 225
+
+2023-05-08T10:26:10+00:00 CRITICAL Cannot redeclare astra_enqueue_scripts() (previously declared in D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php:191) in D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\functions.php on line 196
+

@@ -1,0 +1,80 @@
+2023-05-06T05:33:22+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "codedocx_update_cart_button" not found or invalid function name in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(3065): do_action('wp_footer')
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\footer.php(33): wp_footer()
+#4 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(783): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(718): load_template('D:\\wamp\\www\\Dri...', true, Array)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\templates\archive-product.php(105): get_footer('shop')
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(106): include('D:\\wamp\\www\\Dri...')
+#9 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#10 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#11 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308
+
+2023-05-06T05:33:48+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "codedocx_update_cart_button" not found or invalid function name in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(3065): do_action('wp_footer')
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\footer.php(33): wp_footer()
+#4 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(783): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(718): load_template('D:\\wamp\\www\\Dri...', true, Array)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\page.php(44): get_footer()
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(106): include('D:\\wamp\\www\\Dri...')
+#9 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#10 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#11 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308
+
+2023-05-06T05:34:11+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "codedocx_update_cart_button" not found or invalid function name in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(3065): do_action('wp_footer')
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\footer.php(33): wp_footer()
+#4 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(783): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(718): load_template('D:\\wamp\\www\\Dri...', true, Array)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 D:\wamp\www\Drizzle\wordpress\wp-content\plugins\woocommerce\templates\archive-product.php(105): get_footer('shop')
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(106): include('D:\\wamp\\www\\Dri...')
+#9 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#10 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#11 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308
+
+2023-05-06T05:34:13+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "codedocx_update_cart_button" not found or invalid function name in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(3065): do_action('wp_footer')
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\footer.php(33): wp_footer()
+#4 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(783): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(718): load_template('D:\\wamp\\www\\Dri...', true, Array)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\page.php(44): get_footer()
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(106): include('D:\\wamp\\www\\Dri...')
+#9 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#10 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#11 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308
+
+2023-05-06T05:41:05+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "codedocx_update_cart_button" not found or invalid function name in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 D:\wamp\www\Drizzle\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(3065): do_action('wp_footer')
+#3 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\footer.php(33): wp_footer()
+#4 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(783): require_once('D:\\wamp\\www\\Dri...')
+#5 D:\wamp\www\Drizzle\wordpress\wp-includes\template.php(718): load_template('D:\\wamp\\www\\Dri...', true, Array)
+#6 D:\wamp\www\Drizzle\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#7 D:\wamp\www\Drizzle\wordpress\wp-content\themes\astra\page.php(44): get_footer()
+#8 D:\wamp\www\Drizzle\wordpress\wp-includes\template-loader.php(106): include('D:\\wamp\\www\\Dri...')
+#9 D:\wamp\www\Drizzle\wordpress\wp-blog-header.php(19): require_once('D:\\wamp\\www\\Dri...')
+#10 D:\wamp\www\Drizzle\wordpress\index.php(17): require('D:\\wamp\\www\\Dri...')
+#11 {main}
+  thrown in D:\wamp\www\Drizzle\wordpress\wp-includes\class-wp-hook.php on line 308
+

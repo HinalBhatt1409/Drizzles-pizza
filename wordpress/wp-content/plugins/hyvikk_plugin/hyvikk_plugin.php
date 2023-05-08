@@ -198,7 +198,49 @@ function my_login_redirect( $user_login, $user ) {
 }
 add_action( 'wp_login', 'my_login_redirect', 10, 2 );
 
+//remove coupon functionality
+add_filter( 'woocommerce_coupons_enabled', '__return_false' );
 
+
+//FOR INCLUDE JS FILE
+function remove_update_cart_js()
+{
+  $path_script=plugins_url('assets/js/remove_update_cart.js',__FILE__);
+  
+  $dep=array('jquery');
+        //   include js only for cart page
+      if(is_page('cart')){
+        wp_enqueue_script('remove-update-cart-js',$path_script,$dep,'',true);
+
+      }
+
+}
+add_action('wp_enqueue_scripts','remove_update_cart_js'); //for fronend page
+
+//FOR ADD CSS FILE
+function desclaimer_css()
+{
+  $path_style=plugins_url('assets/css/desclaimer.css',__FILE__);
+  wp_enqueue_style('desclaimer-style',$path_style,false);
+}
+add_action('wp_enqueue_scripts','desclaimer_css');
+
+    
+require_once plugin_dir_path( __FILE__ ) . 'includes/royalty_charges.php';
+
+function bootstrap_css_cdn()
+{
+    echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">';
+}
+add_action('wp_head', 'bootstrap_css_cdn');
+
+
+function bootstrap_js_cdn()
+{
+    require_once  plugin_dir_path( __FILE__ ) . '/includes/desclaimer.php';
+	echo '<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>';
+}
+add_action('wp_footer', 'bootstrap_js_cdn');
 
 
 
