@@ -19,8 +19,29 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <div class="woocommerce-order">
-
+	
+	
+	
+	<div class="net-banking-link">
+		<ul>
+			<li>
+				<!-- ADD QR-Code image  in Thank you page , 123 is media image id-->
+				<?php echo wp_get_attachment_image(123); ?>
+	
+			</li>
+			<li>
+				<a href="https://yesonline.yesbank.co.in/index.html?module=login" target="_blank">YES BANK NetBanking</a>
+			</li>
+			<li>
+				<a href="https://netbanking.hdfcbank.com/netbanking/" target="_blank">HDFC BANK </a>
+			</li>
+			<li>
+				<a href="https://omni.axisbank.co.in/axisretailbanking/" target="_blank">AXIS BANK </a>
+			</li>
+		<ul>
+	</div>
 	<?php
+
 	if ( $order ) :
 
 		do_action( 'woocommerce_before_thankyou', $order->get_id() );
@@ -81,7 +102,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php else : ?>
 
-		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), null ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.After order confirmation it may take up to 7 to 15 days to compelete the order depending upon availability of materials.Order are automatically accepted once the payment is done.', 'woocommerce' ), null ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 
 	<?php endif; ?>
 

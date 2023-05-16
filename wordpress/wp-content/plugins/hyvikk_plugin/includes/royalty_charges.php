@@ -28,33 +28,47 @@ add_action( 'woocommerce_cart_calculate_fees', 'add_royalty', 10, 1 );
 function add_royalty($cart){
     $Royalty_Charges = 'Royalty Charges';
     $user_id = get_current_user_id();
-    $royalty_amount = get_user_meta( $user_id, 'royalty_amount', true );
-
+    $royalty_amount_str = get_user_meta( $user_id, 'royalty_amount', true );
+    $royalty_amount = floatval( $royalty_amount_str );
     $royalty_tax_rate = 0.18; // 18% tax rate
     $royalty_tax_amount = $royalty_amount * $royalty_tax_rate;
     $royalty_total_amount = $royalty_amount + $royalty_tax_amount;
+    $customer_id = get_current_user_id(); // Get the current customer ID.
+    
+    
+    $last_order_date = get_royalty_last_order_date( $customer_id ); // Get the date of the last order for the current customer.
+    if ( $last_order_date === false ) {
+       // If the customer has never placed an order, add the fee.
+       $cart->add_fee( $Royalty_Charges, $royalty_total_amount, true, '' );
+       return;
+    }// Get the date of the last order.
+   $minutes_since_last_order = ( time() - strtotime( $last_order_date ) ) / 60;// Calculate minutes since last order.
 
-    $last_order_date = get_royalty_last_order_date(); // Get the date of the last order.
-   $minutes_since_last_order = ( time() - strtotime( $last_order_date ) ) / 60; // Calculate minutes since last order.
-
-   if ( $minutes_since_last_order <= 5 ) {
+   if ( $minutes_since_last_order <= 5  ) {
     $cart->remove_coupon( $Royalty_Charges ); // Remove the fee if the last order was placed within the last 5 minutes.
- } else {
+ } else if($last_order_date == '' ){
+    $cart->add_fee( $Royalty_Charges, $royalty_total_amount, true, '' ); // Add the fee if the last order was placed more than 30 days ago.
+
+ }
+ else {
     $cart->add_fee( $Royalty_Charges, $royalty_total_amount, true, '' );  // Add the fee if the last order was placed more than 5 minutes ago.
  }
 
 }
-function get_royalty_last_order_date() {
+function get_royalty_last_order_date($customer_id) {
     global $wpdb;
-    $last_order_date = $wpdb->get_var( "
-       SELECT post_date
-       FROM {$wpdb->posts}
-       WHERE post_type = 'shop_order'
-       AND post_status IN ( 'wc-completed', 'wc-processing' )
-       ORDER BY post_date DESC
-       LIMIT 1
-    " );
-    return $last_order_date;
+   $last_order_date = $wpdb->get_var( $wpdb->prepare( "
+      SELECT post_date
+      FROM {$wpdb->posts} p
+      JOIN {$wpdb->postmeta} pm ON p.ID = pm.post_id
+      WHERE p.post_type = 'shop_order'
+      AND p.post_status IN ( 'wc-completed', 'wc-processing' )
+      AND pm.meta_key = '_customer_user'
+      AND pm.meta_value = %d
+      ORDER BY p.post_date DESC
+      LIMIT 1
+   ", $customer_id ) );
+   return $last_order_date;
  }
 
 ?>
