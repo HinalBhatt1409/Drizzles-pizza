@@ -1,2 +1,0 @@
-2023-05-01T09:57:44+00:00 CRITICAL Cannot redeclare subscription_charge_func() (previously declared in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\hyvikk_plugin.php:144) in D:\wamp\www\Drizzle\wordpress\wp-content\plugins\hyvikk_plugin\admin\subscription_charge.php on line 2
-

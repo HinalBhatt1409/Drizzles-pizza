@@ -18,44 +18,95 @@ function add_user_profile_royalty_field( $user ) {
 add_action( 'personal_options_update', 'save_user_profile_royalty_field' );
 add_action( 'edit_user_profile_update', 'save_user_profile_royalty_field' );
 function save_user_profile_royalty_field( $user_id ) {
-    if ( !current_user_can( 'edit_user', $user_id ) ) { 
-        return false; 
+    if ( !current_user_can( 'edit_user', $user_id ) ) {
+        return false;
     }
     update_user_meta( $user_id, 'royalty_amount', $_POST['royalty_amount'] );
 }
 
+// add_action( 'woocommerce_cart_calculate_fees', 'add_royalty', 10, 1 );
+// function add_royalty($cart){
+//     $Royalty_Charges = 'Royalty Charges';
+//     $user_id = get_current_user_id();
+//     $royalty_amount = get_user_meta( $user_id, 'royalty_amount', true );
+//     // $royalty_amount = floatval( $royalty_amount_str );
+//     // $royalty_tax_rate = 0.18; // 18% tax rate
+//     // $royalty_tax_amount = $royalty_amount * $royalty_tax_rate;
+//     // $royalty_total_amount = $royalty_amount + $royalty_tax_amount;
+//     $customer_id = get_current_user_id(); // Get the current customer ID.
+
+
+//     $last_order_date = get_royalty_last_order_date( $customer_id ); // Get the date of the last order for the current customer.
+//     if ( $last_order_date === false ) {
+//        // If the customer has never placed an order, add the fee.
+//        $cart->add_fee( $Royalty_Charges, $royalty_amount, true, '' );
+//        return;
+//     }// Get the date of the last order.
+//    $minutes_since_last_order = ( time() - strtotime( $last_order_date ) ) / 60;// Calculate minutes since last order.
+
+//    if ( $minutes_since_last_order <= 5  ) {
+//     $cart->remove_coupon( $Royalty_Charges ); // Remove the fee if the last order was placed within the last 5 minutes.
+//  } else if($last_order_date == '' ){
+//     $cart->add_fee( $Royalty_Charges, $royalty_amount, true, '' ); // Add the fee if the last order was placed more than 30 days ago.
+
+//  }
+//  else {
+//     $cart->add_fee( $Royalty_Charges, $royalty_amount, true, '' );  // Add the fee if the last order was placed more than 5 minutes ago.
+//  }
+
+// }
+// function get_royalty_last_order_date($customer_id) {
+//     global $wpdb;
+//    $last_order_date = $wpdb->get_var( $wpdb->prepare( "
+//       SELECT post_date
+//       FROM {$wpdb->posts} p
+//       JOIN {$wpdb->postmeta} pm ON p.ID = pm.post_id
+//       WHERE p.post_type = 'shop_order'
+//       AND p.post_status IN ( 'wc-completed', 'wc-processing' )
+//       AND pm.meta_key = '_customer_user'
+//       AND pm.meta_value = %d
+//       ORDER BY p.post_date DESC
+//       LIMIT 1
+//    ", $customer_id ) );
+//    return $last_order_date;
+//  }
+
 add_action( 'woocommerce_cart_calculate_fees', 'add_royalty', 10, 1 );
-function add_royalty($cart){
-    $Royalty_Charges = 'Royalty Charges';
-    $user_id = get_current_user_id();
-    $royalty_amount_str = get_user_meta( $user_id, 'royalty_amount', true );
-    $royalty_amount = floatval( $royalty_amount_str );
-    $royalty_tax_rate = 0.18; // 18% tax rate
-    $royalty_tax_amount = $royalty_amount * $royalty_tax_rate;
-    $royalty_total_amount = $royalty_amount + $royalty_tax_amount;
-    $customer_id = get_current_user_id(); // Get the current customer ID.
-    
-    
-    $last_order_date = get_royalty_last_order_date( $customer_id ); // Get the date of the last order for the current customer.
-    if ( $last_order_date === false ) {
-       // If the customer has never placed an order, add the fee.
-       $cart->add_fee( $Royalty_Charges, $royalty_total_amount, true, '' );
-       return;
-    }// Get the date of the last order.
-   $minutes_since_last_order = ( time() - strtotime( $last_order_date ) ) / 60;// Calculate minutes since last order.
+function add_royalty($cart) {
+   if ( is_admin() && ! defined( 'DOING_AJAX' ) ) return;
+   $Royalty_Charges = 'Royalty Charges';
+   $user_id = get_current_user_id();
+   $royalty_amount = get_user_meta( $user_id, 'royalty_amount', true );
 
-   if ( $minutes_since_last_order <= 5  ) {
-    $cart->remove_coupon( $Royalty_Charges ); // Remove the fee if the last order was placed within the last 5 minutes.
- } else if($last_order_date == '' ){
-    $cart->add_fee( $Royalty_Charges, $royalty_total_amount, true, '' ); // Add the fee if the last order was placed more than 30 days ago.
+   // Change this to the amount you want to charge.
 
- }
- else {
-    $cart->add_fee( $Royalty_Charges, $royalty_total_amount, true, '' );  // Add the fee if the last order was placed more than 5 minutes ago.
- }
+
+
+   $last_order_date = get_royalty_last_order_date( $user_id ); // Get the date of the last order.
+   $current_date=date("Y-m-d");
+
+   $royalty_missed_months= royalty_missed_month($last_order_date , $current_date );
+  
+
+   if($royalty_missed_months>0){
+
+        if($last_order_date == ''){
+        $cart->add_fee( $Royalty_Charges, $royalty_amount, true, '' ); // for new customer
+        }
+        else{
+        $missed_charges = $royalty_amount * $royalty_missed_months;
+        $cart->add_fee( $Royalty_Charges, $missed_charges, true, '' ); // Add charges for missed months.
+
+        }
+    }
+    else{
+        $cart->remove_coupon( $Royalty_Charges ); // Remove the fee if the current month is the same as the month of the last order.
+    }
+
 
 }
-function get_royalty_last_order_date($customer_id) {
+
+function get_royalty_last_order_date($user_id) {
     global $wpdb;
    $last_order_date = $wpdb->get_var( $wpdb->prepare( "
       SELECT post_date
@@ -67,8 +118,22 @@ function get_royalty_last_order_date($customer_id) {
       AND pm.meta_value = %d
       ORDER BY p.post_date DESC
       LIMIT 1
-   ", $customer_id ) );
+   ", $user_id ) );
    return $last_order_date;
- }
+}
+function royalty_missed_month($last_order_date , $current_date){
 
+    $date1 = $last_order_date;
+    $date2 = $current_date;
+    $ts1 = strtotime($date1);
+    $ts2 = strtotime($date2);
+    $year1 = date('Y', $ts1);
+    $year2 = date('Y', $ts2);
+    $month1 = date('m', $ts1);
+    $month2 = date('m', $ts2);
+    $diff = (($year2 - $year1) * 12) + ($month2 - $month1);
+
+    return $diff ;
+
+  }
 ?>

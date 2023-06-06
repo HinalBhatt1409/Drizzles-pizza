@@ -186,7 +186,7 @@ function mytheme_add_woocommerce_support() {
 	add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
-    
+
 function astra_enqueue_scripts() {
     wp_enqueue_script( 'update-cart', get_stylesheet_directory_uri() . '/js/cart-update.js', array( 'jquery' ), '1.0', true );
 }
@@ -195,7 +195,8 @@ add_action( 'wp_enqueue_scripts', 'astra_enqueue_scripts' );
 
 function remove_update_cart()
 {
- 
+
   wp_enqueue_style('remove-update-cart',get_stylesheet_directory_uri() . '/css/remove_update_cart_btn.css',false);
 }
 add_action('wp_enqueue_scripts','remove_update_cart');
+

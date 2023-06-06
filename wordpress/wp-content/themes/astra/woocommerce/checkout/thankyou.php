@@ -19,26 +19,41 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <div class="woocommerce-order">
-	
-	
-	
+
+
+
 	<div class="net-banking-link">
-		<ul>
+		<ol>
+			<p style="font-weight:bold;font-size:18px;">Payment-options</p>
 			<li>
-				<!-- ADD QR-Code image  in Thank you page , 123 is media image id-->
+
+				<p style="margin-bottom:0px;">QR Code</p>
+				<div class="">
 				<?php echo wp_get_attachment_image(123); ?>
-	
+				</div>
+
 			</li>
+			<br>
 			<li>
-				<a href="https://yesonline.yesbank.co.in/index.html?module=login" target="_blank">YES BANK NetBanking</a>
+				<p>Via Net Banking</p>
+
+				<ul>
+
+					<li>
+						<a href="https://yesonline.yesbank.co.in/index.html?module=login" target="_blank">YES BANK NetBanking</a>
+					</li>
+					<li>
+						<a href="https://netbanking.hdfcbank.com/netbanking/" target="_blank">HDFC BANK </a>
+					</li>
+					<li>
+						<a href="https://omni.axisbank.co.in/axisretailbanking/" target="_blank">AXIS BANK </a>
+					</li>
+				<ul>
 			</li>
-			<li>
-				<a href="https://netbanking.hdfcbank.com/netbanking/" target="_blank">HDFC BANK </a>
-			</li>
-			<li>
-				<a href="https://omni.axisbank.co.in/axisretailbanking/" target="_blank">AXIS BANK </a>
-			</li>
-		<ul>
+
+		</ol>
+
+
 	</div>
 	<?php
 
@@ -60,7 +75,13 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php else : ?>
 
-			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.After order confirmation it may take up to 7 to 15 days to compelete the order depending upon availability of materials.Order are automatically accepted once the payment is done.', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you,', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			<br>
+			<?php esc_html_e( 'Your order will be received after payment confirmation.', 'woocommerce' ); ?>
+			<br>
+			<?php esc_html_e( 'Kindly note it may take upto 7 to 15 days for delivery .', 'woocommerce' ); ?>
+		    </p>
+
 
 			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
 
@@ -102,7 +123,13 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php else : ?>
 
-		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.After order confirmation it may take up to 7 to 15 days to compelete the order depending upon availability of materials.Order are automatically accepted once the payment is done.', 'woocommerce' ), null ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">
+			<?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you,', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			<br>
+			<?php esc_html_e( 'Your order will be received after payment confirmation.', 'woocommerce' ); ?>
+			<br>
+			<?php esc_html_e( 'Kindly note it may take upto 7 to 15 days for delivery .', 'woocommerce' ); ?>
+		</p>
 
 	<?php endif; ?>
 
